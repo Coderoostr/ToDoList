@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.toolbar {
+  background-color: #f17105;
+  color: white;
+}
+
+.toolbar-title {
+  margin: 0 16px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.form-section {
+  padding: 16px;
+  text-align: center;
+}
+
+.list-section {
+  padding: 16px;
+}
+
+button {
+  background-color: #6610f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.01rem;
+}
+
+button:hover {
+  background-color: #3c0f83;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #3c0f83;
+}
+
+input {
+  background-color: #fafafa;
+  padding: 0.5rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: #f17105;
+}
+
+input:focus-visible {
+  outline: none;
+  transition: 0.3s;
+  border-bottom-color: #3c0f83;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.to-do-list {
+  list-style: none;
+  padding: 0;
+}
+
+.to-do-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 16px;
+  margin-top: 15px;
+}
+
+.to-do-list button {
+  background-color: #1a8fe3;
+}
+
+.to-do-list button:hover {
+  transition: 0.3s;
+  background-color: #ff0000;
+}
+
+.to-do-list button:active {
+  background-color: #ff0000;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.click-style {
+  text-align: center;
+}
+
+.click-style:hover {
+  cursor: pointer;
+}
+
+.arrow {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+}
+
+.rotate-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+.list {
+  display: none;
+}
+
+.expanded-list {
+  display: block;
+}

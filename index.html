@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header class="toolbar">
+        <h2 class="toolbar-title">To-Do List</h2>
+    </header>
+    <section class="form-section">
+        <h3 class="click-style">Agregar cosas por hacer</h3>
+        <form action="" onsubmit="submitFormulario(event)">
+            <input type="text" name="" id="textoToDo" placeholder="Ingrese un texto">
+            <button class="ml-2" type="submit">Agregar</button>
+        </form>
+    </section>
+    <section class="list-section">
+        <h3 class="click-style" onclick="clickExpandir(event)">
+            Lista de cosas por hacer
+            <span id="flechaExpandir" class="material-icons md-24 vertical-middle arrow rotate-arrow">chevron_right</span>
+        </h3>
+        <ul id="listaToDo" class="list to-do-list">
+            <!--<li>
+                Ir a clases
+                <button>Eliminar</button>
+            </li>-->
+        </ul>
+    </section>
+</body>
+
+</html>
